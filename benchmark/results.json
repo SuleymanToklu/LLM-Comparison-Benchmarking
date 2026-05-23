@@ -1,0 +1,483 @@
+[
+  {
+    "model": "abacusai",
+    "port": 3001,
+    "build": {
+      "install": {
+        "status": "pass",
+        "error": null
+      },
+      "build": {
+        "status": "pass",
+        "error": null
+      },
+      "passed": true
+    },
+    "contract": {
+      "passed": false,
+      "sections": {
+        "profile": {
+          "found": {
+            "username": "torvalds",
+            "name": "Linus Torvalds",
+            "avatar": "https://avatars.githubusercontent.com/u/1024025?v=4",
+            "followers": 304217,
+            "following": 0,
+            "publicRepos": 11
+          },
+          "missing": [
+            "bio"
+          ],
+          "passed": false
+        },
+        "scores": {
+          "found": {
+            "backend": 83,
+            "frontend": 0,
+            "devops": 3,
+            "testing": 50,
+            "consistency": 38,
+            "projectDepth": 85,
+            "overallScore": 44
+          },
+          "missing": [],
+          "passed": true
+        },
+        "topLanguages": {
+          "count": 2,
+          "passed": true,
+          "issue": null
+        },
+        "insights": {
+          "found": {
+            "summary": "str",
+            "strengths": "list",
+            "weaknesses": "list",
+            "recommendations": "list",
+            "careerFit": "list"
+          },
+          "missing": [],
+          "not_list": [],
+          "passed": true
+        },
+        "engineering": {
+          "found": {},
+          "missing": [
+            "hasTests",
+            "hasDockerfile",
+            "hasCICD",
+            "hasReadme",
+            "hasDeployment"
+          ],
+          "passed": false
+        }
+      },
+      "missing_fields": [
+        "profile.bio",
+        "engineering.hasTests",
+        "engineering.hasDockerfile",
+        "engineering.hasCICD",
+        "engineering.hasReadme",
+        "engineering.hasDeployment"
+      ],
+      "deviations": [
+        "name key is 'displayName'"
+      ]
+    },
+    "mock_data": {
+      "is_mock": false,
+      "mock_string": null,
+      "username_match": true,
+      "returned_username": "torvalds",
+      "passed": true
+    },
+    "error_handling": {
+      "passed": true,
+      "status": 400,
+      "has_error_field": true,
+      "issue": null
+    },
+    "score_sanity": {
+      "passed": true,
+      "values": {
+        "backend": 83,
+        "frontend": 0,
+        "devops": 3,
+        "testing": 50,
+        "consistency": 38,
+        "projectDepth": 85,
+        "overallScore": 44
+      },
+      "issues": [],
+      "suspicious": false
+    },
+    "response_time_ms": 2202,
+    "server_started": true,
+    "total_score": 90,
+    "score_breakdown": {
+      "build": 15,
+      "contract": 15,
+      "mock_data": 20,
+      "error_handling": 15,
+      "score_sanity": 15,
+      "response_time": 10
+    },
+    "raw_response_preview": "{\"profile\": {\"username\": \"torvalds\", \"displayName\": \"Linus Torvalds\", \"bio\": null, \"avatarUrl\": \"https://avatars.githubusercontent.com/u/1024025?v=4\", \"profileUrl\": \"https://github.com/torvalds\", \"location\": \"Portland, OR\", \"company\": \"Linux Foundation\", \"websiteUrl\": null, \"followers\": 304217, \"following\": 0, \"accountAgeDays\": 5376, \"totalPublicRepos\": 11, \"ownedRepos\": 8, \"forkedRepos\": 3, \"totalStars\": 244980, \"avgRepoSize\": 789921, \"topLanguages\": [{\"name\": \"C\", \"percentage\": 88, \"repoCount\": 7}, {\"name\": \"Openscad\", \"percentage\": 13, \"repoCount\": 1}], \"avgCommitsPerWeek\": 7, \"activeReposLast90Days\": 4, \"consistencyScore\": 38, \"hasTests\": true, \"hasDockerfile\": false, \"hasCICD\": false, \"hasReadme\": true, \"hasDeployment\": false, \"reposWithTests\": 1, \"reposWithReadme\": 7, \"reposAnalyzed\": 8, \"frontendExposure\": \"none\", \"backendExposure\": \"high\", \"devopsExposure\": \"low\", \"mlExposure\": \"none\", \"detectedFrontendFrameworks\": [], \"detectedBackendFrameworks\": [], \"detectedDevOpsTools\": [\"linux\"], \"detectedMLFrameworks\": [], \"repoQualityScore\": 50}, \"scores\": {\"backend\": 83, \"frontend\": 0, \"devops\": 3, \"testing\": 50, \"consistency\": 38, \"projectDepth\": 85, \"overallScore\": 44}, \"insights\": {\"summary\": \"@torvalds has 8 owned repositories and an overall score of 44/100. AI narrative generation is unavailable \\u2014 the computed scores below reflect the actual analysis.\", \"strengths\": [\"244980 total stars across owned repositories indicates community interest\", \"Test files detected \\u2014 automated quality signals present\"], \"weaknesses\": [\"No CI/CD pipeline found in any analysed repository\", \"No Dockerfile or Docker Compose configuration detected\"], \"recommendations\": [\"Set up a GitHub Actions workflow (.github/workflows/ci.yml) for automation\", \"Create a Dockerfile in at least one project to demonstrate containerisation\"], \"careerFit\": [{\"role\": \"Backend Engineer\", \"confidence\": 83}, {\"role\": \"Full Stack Developer\", \"confidence\": 42}]}, \"analyzedAt\": \"2026-05-23T17:02:08.770Z\"}"
+  },
+  {
+    "model": "antigravity",
+    "port": 3002,
+    "build": {
+      "install": {
+        "status": "pass",
+        "error": null
+      },
+      "build": {
+        "status": "pass",
+        "error": null
+      },
+      "passed": true
+    },
+    "contract": {
+      "passed": true,
+      "sections": {
+        "profile": {
+          "found": {
+            "username": "torvalds",
+            "name": "Linus Torvalds",
+            "bio": "No bio available.",
+            "avatar": "https://avatars.githubusercontent.com/u/1024025?v=4",
+            "followers": 304217,
+            "following": 0,
+            "publicRepos": 11
+          },
+          "missing": [],
+          "passed": true
+        },
+        "scores": {
+          "found": {
+            "backend": 10,
+            "frontend": 10,
+            "devops": 0,
+            "testing": 70,
+            "consistency": 20,
+            "projectDepth": 100,
+            "overallScore": 35
+          },
+          "missing": [],
+          "passed": true
+        },
+        "topLanguages": {
+          "count": 2,
+          "passed": true,
+          "issue": null
+        },
+        "insights": {
+          "found": {
+            "summary": "str",
+            "strengths": "list",
+            "weaknesses": "list",
+            "recommendations": "list",
+            "careerFit": "list"
+          },
+          "missing": [],
+          "not_list": [],
+          "passed": true
+        },
+        "engineering": {
+          "found": {
+            "hasTests": true,
+            "hasDockerfile": false,
+            "hasCICD": false,
+            "hasReadme": true,
+            "hasDeployment": false
+          },
+          "missing": [],
+          "passed": true
+        }
+      },
+      "missing_fields": [],
+      "deviations": [
+        "avatar key is 'avatar_url' not 'avatar'",
+        "publicRepos key is 'public_repos'/'totalPublicRepos'"
+      ]
+    },
+    "mock_data": {
+      "is_mock": false,
+      "mock_string": null,
+      "username_match": true,
+      "returned_username": "torvalds",
+      "passed": true
+    },
+    "error_handling": {
+      "passed": true,
+      "status": 404,
+      "has_error_field": true,
+      "issue": null
+    },
+    "score_sanity": {
+      "passed": true,
+      "values": {
+        "backend": 10,
+        "frontend": 10,
+        "devops": 0,
+        "testing": 70,
+        "consistency": 20,
+        "projectDepth": 100,
+        "overallScore": 35
+      },
+      "issues": [],
+      "suspicious": false
+    },
+    "response_time_ms": 1840,
+    "server_started": true,
+    "total_score": 100,
+    "score_breakdown": {
+      "build": 15,
+      "contract": 25,
+      "mock_data": 20,
+      "error_handling": 15,
+      "score_sanity": 15,
+      "response_time": 10
+    },
+    "raw_response_preview": "{\"profile\": {\"username\": \"torvalds\", \"totalRepos\": 11, \"ownedRepos\": 8, \"activeReposLast90Days\": 8, \"avgCommitsPerWeek\": 0, \"topLanguages\": [{\"name\": \"C\", \"percentage\": 88}, {\"name\": \"OpenSCAD\", \"percentage\": 13}], \"hasTests\": true, \"hasDockerfile\": false, \"hasCICD\": false, \"hasReadme\": true, \"hasDeployment\": false, \"frontendExposure\": \"none\", \"backendExposure\": \"none\", \"devopsExposure\": \"none\", \"mlExposure\": \"none\", \"repoQualityScore\": 35, \"consistencyScore\": 20}, \"scores\": {\"backend\": 10, \"frontend\": 10, \"devops\": 0, \"testing\": 70, \"consistency\": 20, \"projectDepth\": 100, \"overallScore\": 35}, \"insights\": {\"summary\": \"AI analysis currently unavailable.\", \"strengths\": [], \"weaknesses\": [], \"recommendations\": [], \"careerFit\": []}, \"user\": {\"name\": \"Linus Torvalds\", \"avatar_url\": \"https://avatars.githubusercontent.com/u/1024025?v=4\", \"bio\": \"No bio available.\", \"location\": \"Portland, OR\", \"followers\": 304217, \"following\": 0, \"public_repos\": 11}}"
+  },
+  {
+    "model": "claude",
+    "port": 3003,
+    "build": {
+      "install": {
+        "status": "pass",
+        "error": null
+      },
+      "build": {
+        "status": "pass",
+        "error": null
+      },
+      "passed": true
+    },
+    "contract": {
+      "passed": false,
+      "sections": {
+        "profile": {
+          "found": {
+            "username": "torvalds",
+            "name": "Linus Torvalds",
+            "avatar": "https://avatars.githubusercontent.com/u/1024025?v=4",
+            "followers": 304217,
+            "following": 0,
+            "publicRepos": 11
+          },
+          "missing": [
+            "bio"
+          ],
+          "passed": false
+        },
+        "scores": {
+          "found": {
+            "backend": 83,
+            "frontend": 0,
+            "devops": 3,
+            "testing": 50,
+            "consistency": 38,
+            "projectDepth": 85,
+            "overallScore": 44
+          },
+          "missing": [],
+          "passed": true
+        },
+        "topLanguages": {
+          "count": 2,
+          "passed": true,
+          "issue": null
+        },
+        "insights": {
+          "found": {
+            "summary": "str",
+            "strengths": "list",
+            "weaknesses": "list",
+            "recommendations": "list",
+            "careerFit": "list"
+          },
+          "missing": [],
+          "not_list": [],
+          "passed": true
+        },
+        "engineering": {
+          "found": {
+            "hasTests": true,
+            "hasDockerfile": false,
+            "hasCICD": false,
+            "hasReadme": true,
+            "hasDeployment": false
+          },
+          "missing": [],
+          "passed": true
+        }
+      },
+      "missing_fields": [
+        "profile.bio"
+      ],
+      "deviations": [
+        "name key is 'displayName'"
+      ]
+    },
+    "mock_data": {
+      "is_mock": false,
+      "mock_string": null,
+      "username_match": true,
+      "returned_username": "torvalds",
+      "passed": true
+    },
+    "error_handling": {
+      "passed": true,
+      "status": 400,
+      "has_error_field": true,
+      "issue": null
+    },
+    "score_sanity": {
+      "passed": true,
+      "values": {
+        "backend": 83,
+        "frontend": 0,
+        "devops": 3,
+        "testing": 50,
+        "consistency": 38,
+        "projectDepth": 85,
+        "overallScore": 44
+      },
+      "issues": [],
+      "suspicious": false
+    },
+    "response_time_ms": 1823,
+    "server_started": true,
+    "total_score": 95,
+    "score_breakdown": {
+      "build": 15,
+      "contract": 20,
+      "mock_data": 20,
+      "error_handling": 15,
+      "score_sanity": 15,
+      "response_time": 10
+    },
+    "raw_response_preview": "{\"profile\": {\"username\": \"torvalds\", \"displayName\": \"Linus Torvalds\", \"bio\": null, \"avatarUrl\": \"https://avatars.githubusercontent.com/u/1024025?v=4\", \"profileUrl\": \"https://github.com/torvalds\", \"location\": \"Portland, OR\", \"company\": \"Linux Foundation\", \"websiteUrl\": null, \"followers\": 304217, \"following\": 0, \"accountAgeDays\": 5376, \"totalPublicRepos\": 11, \"ownedRepos\": 8, \"forkedRepos\": 3, \"totalStars\": 244980, \"avgRepoSize\": 789921, \"topLanguages\": [{\"name\": \"C\", \"percentage\": 88, \"repoCount\": 7}, {\"name\": \"Openscad\", \"percentage\": 13, \"repoCount\": 1}], \"avgCommitsPerWeek\": 7, \"activeReposLast90Days\": 4, \"consistencyScore\": 38, \"hasTests\": true, \"hasDockerfile\": false, \"hasCICD\": false, \"hasReadme\": true, \"hasDeployment\": false, \"reposWithTests\": 1, \"reposWithReadme\": 7, \"reposAnalyzed\": 8, \"frontendExposure\": \"none\", \"backendExposure\": \"high\", \"devopsExposure\": \"low\", \"mlExposure\": \"none\", \"detectedFrontendFrameworks\": [], \"detectedBackendFrameworks\": [], \"detectedDevOpsTools\": [\"linux\"], \"detectedMLFrameworks\": [], \"repoQualityScore\": 50}, \"scores\": {\"backend\": 83, \"frontend\": 0, \"devops\": 3, \"testing\": 50, \"consistency\": 38, \"projectDepth\": 85, \"overallScore\": 44}, \"insights\": {\"summary\": \"@torvalds has 8 owned repositories and an overall score of 44/100. AI narrative generation is unavailable \\u2014 the computed scores below reflect the actual analysis.\", \"strengths\": [\"244980 total stars across owned repositories indicates community interest\", \"Test files detected \\u2014 automated quality signals present\"], \"weaknesses\": [\"No CI/CD pipeline found in any analysed repository\", \"No Dockerfile or Docker Compose configuration detected\"], \"recommendations\": [\"Set up a GitHub Actions workflow (.github/workflows/ci.yml) for automation\", \"Create a Dockerfile in at least one project to demonstrate containerisation\"], \"careerFit\": [{\"role\": \"Backend Engineer\", \"confidence\": 83}, {\"role\": \"Full Stack Developer\", \"confidence\": 42}]}, \"analyzedAt\": \"2026-05-23T17:02:51.122Z\"}"
+  },
+  {
+    "model": "codex",
+    "port": 3004,
+    "build": {
+      "install": {
+        "status": "pass",
+        "error": null
+      },
+      "build": {
+        "status": "pass",
+        "error": null
+      },
+      "passed": true
+    },
+    "contract": {
+      "passed": false,
+      "sections": {
+        "profile": {
+          "found": {
+            "username": "torvalds",
+            "name": "Linus Torvalds",
+            "avatar": "https://avatars.githubusercontent.com/u/1024025?v=4",
+            "followers": 304217,
+            "following": 0,
+            "publicRepos": 11
+          },
+          "missing": [
+            "bio"
+          ],
+          "passed": false
+        },
+        "scores": {
+          "found": {
+            "backend": 0,
+            "frontend": 0,
+            "devops": 0,
+            "testing": 0,
+            "consistency": 70,
+            "projectDepth": 80,
+            "overallScore": 24
+          },
+          "missing": [],
+          "passed": true
+        },
+        "topLanguages": {
+          "count": 2,
+          "passed": true,
+          "issue": null
+        },
+        "insights": {
+          "found": {
+            "summary": "str",
+            "strengths": "list",
+            "weaknesses": "list",
+            "recommendations": "list",
+            "careerFit": "list"
+          },
+          "missing": [],
+          "not_list": [],
+          "passed": true
+        },
+        "engineering": {
+          "found": {
+            "hasTests": false,
+            "hasDockerfile": false,
+            "hasCICD": false,
+            "hasReadme": true,
+            "hasDeployment": false
+          },
+          "missing": [],
+          "passed": true
+        }
+      },
+      "missing_fields": [
+        "profile.bio"
+      ],
+      "deviations": []
+    },
+    "mock_data": {
+      "is_mock": false,
+      "mock_string": null,
+      "username_match": true,
+      "returned_username": "torvalds",
+      "passed": true
+    },
+    "error_handling": {
+      "passed": true,
+      "status": 400,
+      "has_error_field": true,
+      "issue": null
+    },
+    "score_sanity": {
+      "passed": true,
+      "values": {
+        "backend": 0,
+        "frontend": 0,
+        "devops": 0,
+        "testing": 0,
+        "consistency": 70,
+        "projectDepth": 80,
+        "overallScore": 24
+      },
+      "issues": [],
+      "suspicious": false
+    },
+    "response_time_ms": 4443,
+    "server_started": true,
+    "total_score": 95,
+    "score_breakdown": {
+      "build": 15,
+      "contract": 20,
+      "mock_data": 20,
+      "error_handling": 15,
+      "score_sanity": 15,
+      "response_time": 10
+    },
+    "raw_response_preview": "{\"profile\": {\"username\": \"torvalds\", \"name\": \"Linus Torvalds\", \"avatarUrl\": \"https://avatars.githubusercontent.com/u/1024025?v=4\", \"htmlUrl\": \"https://github.com/torvalds\", \"bio\": null, \"location\": \"Portland, OR\", \"company\": \"Linux Foundation\", \"blog\": \"\", \"publicRepos\": 11, \"followers\": 304217, \"following\": 0, \"createdAt\": \"2011-09-03T15:26:22Z\"}, \"normalized\": {\"username\": \"torvalds\", \"totalRepos\": 11, \"ownedRepos\": 8, \"activeReposLast90Days\": 3, \"topLanguages\": [{\"name\": \"C\", \"percentage\": 99.8}, {\"name\": \"OpenSCAD\", \"percentage\": 0.2}], \"avgCommitsPerWeek\": 7, \"hasTests\": false, \"hasDockerfile\": false, \"hasCICD\": false, \"hasReadme\": true, \"hasDeployment\": false, \"frontendExposure\": \"none\", \"backendExposure\": \"none\", \"devopsExposure\": \"none\", \"mlExposure\": \"none\", \"repoQualityScore\": 19, \"consistencyScore\": 70}, \"scores\": {\"backend\": 0, \"frontend\": 0, \"devops\": 0, \"testing\": 0, \"consistency\": 70, \"projectDepth\": 80, \"overallScore\": 24}, \"insights\": {\"summary\": \"@torvalds has 8 owned non-fork repositories, 3 active repos in public events over 90 days, C 99.8%, OpenSCAD 0.2%, and an overall score of 24/100.\", \"strengths\": [\"README signal appears in at least one owned repository, helping portfolio readability.\", \"Recent public cadence is visible at 7 commits per week.\"], \"weaknesses\": [\"Testing score is 0/100; test files or CI coverage are not strong enough across the owned repositories.\", \"DevOps score is 0/100 because Docker, CI/CD, or deployment signals are incomplete.\", \"Repository quality is 19/100, indicating missing documentation, automation, tests, or deployment evidence.\"], \"recommendations\": [\"Add tests to one active repository first; no test files were detected in the inspected owned repositories.\", \"Add a GitHub Actions workflow because CI/CD is currently absent from the engineering maturity signals.\", \"Add a Dockerfile to a backend or full-stack repository to make the DevOps score more verifiable.\"], \"careerFit\": [{\"role\": \"ML / Data Engineer\", \"confidence\": 40}, {\"role\": \"Full-Stack Engineer\", \"conf\u2026"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const g = require\\('@google/generative-ai'\\); console.log\\('SchemaType:', JSON.stringify\\(g.SchemaType\\)\\)\")"
+    ]
+  }
+}

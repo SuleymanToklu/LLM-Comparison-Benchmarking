@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@14 dev-profile-analyzer --typescript --tailwind --app --no-eslint --no-src-dir --import-alias \"@/*\")",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const names = Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('github'\\) || k.toLowerCase\\(\\).includes\\('git'\\)\\); console.log\\(names.slice\\(0,10\\)\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const names = Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).startsWith\\('git'\\)\\); console.log\\(names.slice\\(0,20\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s \"http://localhost:3000/api/analyze?username=torvalds\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('username:', d['profile']['username']\\); print\\('ownedRepos:', d['profile']['ownedRepos']\\); print\\('overallScore:', d['scores']['overallScore']\\); print\\('summary:', d['insights']['summary'][:120]\\)\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\); console.log\\('username:', d.profile?.username\\); console.log\\('ownedRepos:', d.profile?.ownedRepos\\); console.log\\('overallScore:', d.scores?.overallScore\\); console.log\\('AI summary:', d.insights?.summary?.slice\\(0,120\\)\\); console.log\\('error:', d.error\\)\")",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -Confirm:$false)",
+      "Bash(curl -s -w \"\\\\nHTTP_STATUS:%{http_code}\" \"http://localhost:3000/api/analyze?username=nonexistentuser99999\")"
+    ]
+  }
+}
