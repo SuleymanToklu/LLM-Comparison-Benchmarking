@@ -1,5 +1,3 @@
-# prompt 1
-
 You are a senior full-stack engineer. Build a complete, production-ready Developer Profile Analyzer web application from scratch.
 
 ## What This App Does
@@ -165,7 +163,7 @@ GEMINI_API_KEY=required
 1. Complete runnable Next.js project
 2. All files in the structure above
 3. .env.example
-4. [README.md](http://readme.md/) with setup instructions
+4. README.md with setup instructions
 
 ## Definition of Done
 
